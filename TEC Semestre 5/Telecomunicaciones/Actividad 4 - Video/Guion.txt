@@ -54,3 +54,10 @@ Ruido Externo: proviene de algún sistema externo.
 Ruido Interno: es cuando el ruido proviene del mismo sistema.
 
 https://sites.google.com/site/allteinco/unidad-1-introduccion-a-las-telecomunicaciones
+
+
+
+Extra 6 Min:
+Es muy importante tener en cuenta que los princi­pios generales de la modulación digital y analógica se aplican a todos los tipos de canales.
+Generalmente aqui es donde se crea el ruido, debido a perturbaciones electricas naturales como relamapagos o fuentes artificailes como lineas de transmisión de alto voltaje,
+cuando se enciende un automovil, o tambien de un computador digital cercano.

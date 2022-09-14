@@ -1,0 +1,54 @@
+Introducción:
+El internet, radio, Televisión entre otros son medios de comunicación los cuales todos transmiten información.
+
+1.1 Diagrama de bloques de un sistema de comunicación:
+
+Como podemos observar lo mas importante es que existen tres subsistemas: el transmisor, medio de transporte y el receptor, cada uno de ellos tiene un
+papel importante.
+
+El transmisor se encarga de convertir la señal para hacerla más eficiente por ejemplo cuando se manda una señal analógica, el transmisor limita el
+ancho de banda de la onda de entrada. De igual manera el transmisor es capaz de convertir una señal analogica a una digital y viceversa.
+
+El medio de transporte o canales tienen distintas categorias: alambre duro y alambre blando, el alambre duro puede ser el cable de par trenzado,
+cables coaxiales y fibra óptica. el alambre blando es el aire, vacío y el agua del mar.
+
+El receptor capta la señal y la limpia del ruido generador por el medio de transporte.
+
+
+1.2 Modos y medios de transmisión:
+
+Existen 4 modos o medios de transmisión en la actualidad los cuales son:
+
+Cable coaxial, Par trenzado, Fibra óptica y Microondas terrestes
+ 
+a) Empezando con el cable coaxial éste tipo de cable consiste de un conductor central fijo sobre un forro de material aislante.
+
+b) El par trenzado está compuesto de conductores de cobre aislados por material plástico y trenzados en pares.
+
+c) La fibra óptica útiliza la luz confinada en una fibra de vidrio para transmitir información.
+
+d) Las microondas terrestes son aquellas bandas de frecnecia mayores a 1 GHz estas son utilizadas para redes moviles y fijas.
+
+
+1.3 Espectros de frecuencia
+
+El espectro de frecuencia de un fenómeno ondulatorio superposición de ondas de varias frecuencias.
+Existen dos tipos ondas materiales y ondas electromagneticas
+
+Ondas Materiales
+Se propagan por solidos, liquidos y gaseosos las cuales pueden ser: ondas infrasonoras, ondas sonoras y ultrasonoras 
+
+Ondas electromagneticas:
+
+estas son muy importantes para las telecomunicaciones para la comunicación inalambrica y las ondas luminosas
+
+
+1.4 Ruido y normatividad
+
+El ruido cuando una señal es pertubada la transmisión y procesamiento de señales
+
+Tipos de ruido:
+
+Ruido Externo: proviene de algún sistema externo.
+
+Ruido Interno: es cuando el ruido proviene del mismo sistema.

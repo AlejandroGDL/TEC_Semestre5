@@ -52,3 +52,5 @@ Tipos de ruido:
 Ruido Externo: proviene de algún sistema externo.
 
 Ruido Interno: es cuando el ruido proviene del mismo sistema.
+
+https://sites.google.com/site/allteinco/unidad-1-introduccion-a-las-telecomunicaciones

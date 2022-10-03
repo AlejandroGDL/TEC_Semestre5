@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Quicksand", sans-serif;
+    font-size: 15px;
+}
+
+/*Cada uno de los contenedores*/
+.grid-container > * {
+    box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+}
+
+.header{
+    font-weight: 700; /*Negritas*/
+    background-color: black;
+    color: white;
+}
+
+.nav{
+    
+}

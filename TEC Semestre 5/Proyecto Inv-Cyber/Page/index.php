@@ -5,8 +5,8 @@
     </head>
 
     <body class="grid-container">
-        <header class="header">Logo Here</header>
-        <nav class="nav">Nav</nav>
+        <?php require('layout/header.php')?>
+        <?php require('layout/nav.php')?>
         <article class="main">Main</article>
         <footer class="footer">Footer</footer>
     </body>

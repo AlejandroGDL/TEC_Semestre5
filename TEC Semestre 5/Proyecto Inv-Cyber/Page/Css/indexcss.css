@@ -25,6 +25,21 @@ body{
     color: white;
 }
 
-.nav{
-    
+.nav button{
+    text-align: center;
+    width: 120px;
+    height: 30px;
+
+    border: 0;
+    background-color: transparent;
+}
+
+.nav button:hover{
+    cursor: hand;
+}
+
+.nav button img{
+    margin-left: 5px;
+    width: 30px;
+    height: 30px;
 }

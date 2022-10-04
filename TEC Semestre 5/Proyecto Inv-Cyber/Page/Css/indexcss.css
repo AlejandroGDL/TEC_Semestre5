@@ -23,6 +23,18 @@ body{
     font-weight: 700; /*Negritas*/
     background-color: black;
     color: white;
+    height: 200px;
+
+    font-size: 100px;
+}
+
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 
 .nav button{
@@ -32,6 +44,11 @@ body{
 
     border: 0;
     background-color: transparent;
+
+    display: flex;
+    gap: 1px;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 .nav button:hover{
@@ -39,7 +56,22 @@ body{
 }
 
 .nav button img{
-    margin-left: 5px;
     width: 30px;
     height: 30px;
 }
+
+.nav a{
+    width: 1px;
+    height: 25px;
+    background-color: #000000;
+}
+
+#nav{
+    display: flex;
+    gap: 50px;
+}
+
+.Divider{
+    width: 1500px;
+    background-color: #000000;
+}   

@@ -11,67 +11,90 @@ body{
     font-size: 15px;
 }
 
+/*Maquetado*/
+.grid-container{
+    display: grid;
+    grid-template: 
+    "header" 130px
+    "nav" 120px
+    "main"
+    "footer" 150px;
+}
+
 /*Cada uno de los contenedores*/
 .grid-container > * {
-    box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
+    /*box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);*/
     border-radius: 4px;
     padding: 10px;
     text-align: center;
 }
 
+/*Encabezado*/
 .header{
-    font-weight: 700; /*Negritas*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: black;
-    color: white;
-    height: 200px;
 
+    /*Borrar Con Imagen*/
+    font-weight: 700; /*Negritas*/
+    color: white;
     font-size: 100px;
 }
 
-
+/*Grupo navegación y divisor*/
 .nav{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 30px;
 }
 
+/*Botones Barra navegación*/
 .nav button{
-    text-align: center;
     width: 120px;
     height: 30px;
+    font-size: 20px;
 
     border: 0;
     background-color: transparent;
 
     display: flex;
-    gap: 1px;
+    gap: 2px;
     align-items: center;
     justify-content: space-evenly;
 }
 
+/*Hover Botones*/
 .nav button:hover{
     cursor: hand;
 }
 
+/*Imagen Botones*/
 .nav button img{
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
 }
 
+/*Divisor Barra Navegación*/
 .nav a{
     width: 1px;
     height: 25px;
     background-color: #000000;
 }
 
-#nav{
+/*Barra navegación Completa (Botones + Divisor)*/
+.NavCompleto{
     display: flex;
-    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
-
-.Divider{
-    width: 1500px;
-    background-color: #000000;
+/*Divisor Barra Navegación*/
+.NavCompleto .Divisor{
+    margin-top: 30px;
+    width: 1300px;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.50);
 }   

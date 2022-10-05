@@ -1,4 +1,4 @@
-<nav> 
+<nav class="NavCompleto"> 
     <div class="nav">
         <button>Ventas <img src="icons/ShopCar_Dark.png" alt=""></button>
         <a></a>
@@ -7,5 +7,5 @@
         <a></a>
         <button>Eliminar <img src="icons/Delete_Dark.png" alt=""></button>
     </div>
-    <a class="Divider">Ayuda</a>
+    <a class="Divisor"></a>
 </nav>

@@ -6,6 +6,10 @@
     padding: 0;
 }
 
+html{
+    height: 100%;
+}
+
 body{
     font-family: "Quicksand", sans-serif;
     font-size: 15px;
@@ -17,15 +21,14 @@ body{
     grid-template: 
     "header" 130px
     "nav" 120px
-    "main"
-    "footer" 150px;
+    "main" auto
+    "footer" 15%;
 }
 
 /*Cada uno de los contenedores*/
 .grid-container > * {
     /*box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);*/
-    border-radius: 4px;
-    padding: 10px;
+    padding: 5px;
     text-align: center;
 }
 
@@ -48,7 +51,7 @@ body{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 20px;
 }
 
 /*Botones Barra navegación*/
@@ -61,7 +64,7 @@ body{
     background-color: transparent;
 
     display: flex;
-    gap: 2px;
+    gap: 1px;
     align-items: center;
     justify-content: space-evenly;
 }
@@ -94,7 +97,152 @@ body{
 /*Divisor Barra Navegación*/
 .NavCompleto .Divisor{
     margin-top: 30px;
-    width: 1300px;
+    width: 70%;
     height: 1px;
     background-color: rgba(0, 0, 0, 0.50);
-}   
+}
+
+
+/*Contenido Completo*/
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+/*Botones dentro del MAIN*/
+.Main_Menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    gap: 15px;
+
+    width: 60%;
+}
+
+/*Texto MAIN MENU*/
+.Main_Menu p{
+    font-size: 24px;
+}
+
+/*Buscador*/
+.txtSearch{
+    width: 40%;
+    height: 40px;
+    border: 1px solid #000000;
+    font-size: 24px;
+}
+
+.txtSearch:hover{
+    border: 3px solid rgba(0, 0, 0, 0.75);
+}
+
+/*Botón Enter*/
+.Enter{
+    width: 100px;
+    height: 40px;
+    border-radius: 0px 50px 50px 0px;
+    color: #FFFFFF;
+    background-color: #474747;
+    border: 0px;
+    font-size: 20px;
+}
+
+/*Hover Botón Enter*/
+.Enter:Hover{
+    cursor: hand;
+    background-color: rgb(71, 71, 71, 0.75);
+}
+
+/*Botón Buscar*/
+.Search{
+    width: 170px;
+    height: 40px;
+    border-radius: 50px;
+    color: #FFFFFF;
+    background-color: #474747;
+    border: 0px;
+    font-size: 20px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Hover Botón Buscar*/
+.Search:hover{
+    cursor: hand;
+
+    background-color: rgb(71, 71, 71, 0.75);
+}
+
+/*Imagen Botón Buscar*/
+.Search img{
+    width: 30px;
+    height: 30px;
+    margin-left: 15px;
+    z-index: 0;
+}
+
+/*Encabezado Tabla*/
+.Encabezado{
+    color: #FFFFFF;
+    width: 500px;
+}
+
+/*Atributos Tabla*/
+.main table{
+    width: 60%;
+    background-color: #000000;
+    border: 1px dotted #000000;
+
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.main tbody{
+    background-color: #FFFFFF;
+    color: #000000;
+
+    font-weight: 100;
+    font-size: 18px;
+}
+
+/*Píe de pagina*/
+.footer{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+
+    gap: 30px;
+}
+
+.footer p{
+    font-size: 50px;
+}
+
+/*Botón cobrar*/
+.btnCobrar{
+    width: 200px;
+    height: 50px;
+
+    color: #FFFFFF;
+    background-color: #000000;
+    border: 0;
+    border-radius: 50px;
+
+    font-size: 24px;
+    font-weight: 700;
+
+    margin-right: 50px;
+}
+
+.btnCobrar:hover{
+    background-color: rgb(0, 0, 0, 0.75);
+    cursor: hand;
+}

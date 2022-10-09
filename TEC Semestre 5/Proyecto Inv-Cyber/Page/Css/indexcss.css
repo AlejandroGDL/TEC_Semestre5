@@ -72,6 +72,9 @@ body{
 /*Hover Botones*/
 .nav button:hover{
     cursor: hand;
+
+    background-color: rgb(71, 71, 71, 0.10);
+    border-radius: 4px;
 }
 
 /*Imagen Botones*/
@@ -196,20 +199,18 @@ body{
 
 /*Atributos Tabla*/
 .main table{
-    width: 60%;
+    width: 80%;
     background-color: #000000;
-    border: 1px dotted #000000;
-
-    font-weight: 700;
-    font-size: 20px;
+    font-size: 18px;
 }
 
+/*Atributos Cuerpo Tabla*/
 .main tbody{
     background-color: #FFFFFF;
     color: #000000;
 
     font-weight: 100;
-    font-size: 18px;
+    font-size: 15px;
 }
 
 /*Píe de pagina*/

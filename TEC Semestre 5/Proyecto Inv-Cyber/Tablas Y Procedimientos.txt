@@ -1,0 +1,5 @@
+- Código
+- Descripción
+- Cantidad
+- Precio
+- Activo

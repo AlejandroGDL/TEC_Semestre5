@@ -34,11 +34,13 @@
 
                 <!--Cuerpo Tabla-->
                 <tbody>
-                    <th>5</th>
-                    <th>Producto de ejemplo 5</th>
-                    <th>2</th>
-                    <th>19.99</th>
-                    <th>39.98</th>
+                    <div class="Producto">
+                        <th>5</th>
+                        <th>Producto de ejemplo 5</th>
+                        <th>2</th>
+                        <th>19.99</th>
+                        <th>39.98</th>
+                    </div>
                 </tbody>
             </table>
 

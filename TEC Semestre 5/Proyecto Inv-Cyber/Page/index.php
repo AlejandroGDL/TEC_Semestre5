@@ -1,3 +1,7 @@
+<?php
+
+$conexion=new PDO("sqlsrv:server=ANDRO-PC\SQLEXPRESS;database=Proyecto","Andro-PC\arely","1298");
+?>
 <html>
     <head>
         <title>Menú Principal</title>

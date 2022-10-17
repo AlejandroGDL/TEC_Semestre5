@@ -1,0 +1,6 @@
+Router to Router:
+Añadir Modulo WIC-2T
+Encernder Ambos Routers en config FASTEthernet, marcar casilla ON
+
+Conectar Dispositivos Distintos:
+Copper Straight

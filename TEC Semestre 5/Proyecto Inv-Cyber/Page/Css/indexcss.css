@@ -4,6 +4,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    text-decoration: none;
 }
 
 html{
@@ -84,9 +85,9 @@ body{
 }
 
 /*Divisor Barra Navegación*/
-.nav a{
+#sep{
     width: 1px;
-    height: 25px;
+    height: 20px;
     background-color: rgb(0, 0, 0);
 }
 

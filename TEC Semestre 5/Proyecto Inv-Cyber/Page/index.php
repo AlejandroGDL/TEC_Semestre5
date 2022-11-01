@@ -1,29 +1,10 @@
 <!--Conexion Base de datos-->
 <?php
-$serverName = "ANDROLAPTOP\SQLEXPRESS";
+$serverName = "ANDRO-PC\SQLEXPRESS"; //Cambiar
 $connectionInfo = array( "Database"=>"Proyecto", "UID"=>"UsernameCon", "PWD"=>"Alejandro1298");
 $conn = sqlsrv_connect( $serverName, $connectionInfo);
 
-
-/*$consulta=$conn->prepare("SELECT * FROM Producto");
-$consulta->execute();
-$datos=$consulta->fetchAll(PDO::FETCH_ASSOC);
-var_dump($datos); 
-*/
-
-$sql = 'SELECT * FROM Producto';
-$resultado = sqlsrv_query($conn,$sql);
-
-/* VERIFICAR CONEXIÓN 
-if( $conn ) {
-     echo "Connection established.<br />";
-}else{
-     echo "Connection could not be established.<br />";
-     die( print_r( sqlsrv_errors(), true));
-}*/
-
 ?>
-
 
 <html>
     <head>
@@ -62,35 +43,39 @@ if( $conn ) {
                 
                 <!--Datos SQL Tabla-->
                 <?php
-                    $consulta = "SELECT * FROM Producto";
+                    $consulta = "SELECT * FROM Productos";
                     $ejecutar = sqlsrv_query($conn,$consulta);
 
+                    //Generar lista de Productos
                     $i = 0;
-
                     while($fila = sqlsrv_fetch_array($ejecutar)){
-                        $Codigo = $fila['Codigo'];
-                        $Descripcion = $fila['Descripcion'];
+                        $Codigo = $fila['Code_Producto'];
+                        $Descripcion = $fila['Desc_Producto'];
                         $Cantidad = $fila['Cantidad'];
                         $Precio = $fila['Precio'];
                         $i++;
-                    }
+                    
                     
                     //Calcular Importe
                     $Importe = $Cantidad * $Precio;
                 ?>
+                    <!--Cuerpo Tabla-->
+                    <tbody>
+                            <tr>
+                                <td><?php echo $Codigo; ?></td>
+                                <td><?php echo $Descripcion; ?></td>
+                                <td><?php echo $Cantidad; ?></td>
+                                <td><?php echo $Precio; ?></td>
+                                <td><?php echo $Importe?></td>
+                                <td><a href="index.php?editar=<?php echo $id; ?>">Eliminar</th>
+                            </tr>
+                    </tbody>
+                    
+                <?php } ?>
 
 
-                <!--Cuerpo Tabla-->
-                <tbody>
-                    <div class="Producto">
-                        <th><?php echo $Codigo; ?></th>
-                        <th><?php echo $Descripcion; ?></th>
-                        <th><?php echo $Cantidad; ?></th>
-                        <th><?php echo $Precio; ?></th>
-                        <th><?php echo $Importe?></th>
-                        <th><a href="index.php?editar=<?php echo $id; ?>">Eliminar</th>
-                    </div>
-                </tbody>
+
+
             </table>
 
         </article>

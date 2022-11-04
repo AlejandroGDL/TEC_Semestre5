@@ -10,7 +10,6 @@ void setup() {
   pinMode(7, OUTPUT);
 }
 void loop() {
-  /*
   led1();
   led2();
   led3();
@@ -23,10 +22,10 @@ void loop() {
   led4();
   led3();
   led2();
-  led1();*/
-  ciclo();
+  led1();
+  //ciclo();
 }
-/*
+
 void led1(){
   digitalWrite(8, HIGH);   // turn the LED on (HIGH is the voltage level)
   delay(Vdelay);                       // wait for a second
@@ -62,7 +61,7 @@ void led7(){
   delay(Vdelay);                       // wait for a second
   digitalWrite(7, LOW);    // turn the LED off by making the voltage LOW
 }
-*/
+
 
 /*Ciclo for para cada led*/
 void ciclo(){

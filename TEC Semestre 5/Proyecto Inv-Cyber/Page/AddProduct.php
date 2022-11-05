@@ -1,6 +1,6 @@
 <!--Conexion Base de datos-->
 <?php
-$serverName = "ANDRO-PC\SQLEXPRESS"; //Cambiar
+$serverName = "ANDROLAPTOP\SQLEXPRESS"; //Cambiar
 $connectionInfo = array( "Database"=>"Proyecto", "UID"=>"UsernameCon", "PWD"=>"Alejandro1298");
 $conn = sqlsrv_connect( $serverName, $connectionInfo);
 
@@ -42,6 +42,8 @@ if ($conn){
                 <p>Cantidad del inventario:</p>
                 <input name="Count" type="text"></input>
 
+                <input type="submit" name="Insert" class="btnAgregar" value="Agregar"></input>
+
             </form>
 
             <a id="Sep2"></a>
@@ -52,13 +54,13 @@ if ($conn){
                 $Precio = $_POST['Price'];
                 $Cantidad = $_POST['Count'];
 
-                $insertar = "INSERT INTO Productos(Code_Producto,Desc_Producto,Cantidad,Precio,Estado) VALUES('$Codigo','$Descripcion','$Precio','$Cantidad','Activo')";
-                $ejecutar = sqlsrv_prepare($conn,$insertar);
+                $insertar = "INSERT INTO Producto(Codigo,Descripcion,Cantidad,Precio,Estado) VALUES('$Codigo','$Descripcion','$Precio','$Cantidad','Activo')";
+                $ejecutar = sqlsrv_query($conn,$insertar);
 
                 if($ejecutar){
-                    echo "FUNCIONA!";
+                    echo "<script>alert('Producto Insertado Correctamente');</script>";
                 } else{
-                    echo "NO funciona :c";
+                    echo "<script>alert('ERROR al insertar el producto');</script>";
                 }
             }
         ?>
@@ -67,7 +69,7 @@ if ($conn){
 
         <!--Píe de Pagina-->
         <footer class="footer">
-            <input type="submit" name="Insert" class="btnAgregar" value="Agregar"></input>
+            
             <!-- <button name="Insert" type="submit" class="btnAgregar"><img src="Icons/AddNew_White.png"></img>Crear</button> -->
             <h6>Hola</h6>
         </footer>

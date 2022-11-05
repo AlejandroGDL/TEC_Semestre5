@@ -1,6 +1,6 @@
 <!--Conexion Base de datos-->
 <?php
-$serverName = "ANDRO-PC\SQLEXPRESS"; //Cambiar
+$serverName = "ANDROLAPTOP\SQLEXPRESS"; //Cambiar
 $connectionInfo = array( "Database"=>"Proyecto", "UID"=>"UsernameCon", "PWD"=>"Alejandro1298");
 $conn = sqlsrv_connect( $serverName, $connectionInfo);
 
@@ -43,14 +43,14 @@ $conn = sqlsrv_connect( $serverName, $connectionInfo);
                 
                 <!--Datos SQL Tabla-->
                 <?php
-                    $consulta = "SELECT * FROM Productos";
+                    $consulta = "SELECT * FROM Producto";
                     $ejecutar = sqlsrv_query($conn,$consulta);
 
                     //Generar lista de Productos
                     $i = 0;
                     while($fila = sqlsrv_fetch_array($ejecutar)){
-                        $Codigo = $fila['Code_Producto'];
-                        $Descripcion = $fila['Desc_Producto'];
+                        $Codigo = $fila['Codigo'];
+                        $Descripcion = $fila['Descripcion'];
                         $Cantidad = $fila['Cantidad'];
                         $Precio = $fila['Precio'];
                         $i++;

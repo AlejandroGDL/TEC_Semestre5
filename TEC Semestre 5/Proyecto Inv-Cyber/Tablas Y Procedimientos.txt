@@ -1,7 +1,28 @@
 Productos
-- ID (Por si acaso XD) int, primary key, incremental
+- ID int, primary key, incremental
 - Código varchar(70)
 - Descripción varchar(MAX)
 - Cantidad int
 - Precio float
 - Estado varchar(MAX)
+
+
+Carrito
+- Código
+- Descripción
+- Cantidad
+- Precio
+- Estado
+- Fecha
+
+
+Historial_Ventas
+- ID_Venta
+
+Historial
+- Código
+- Descripción
+- Cantidad
+- Precio
+- Estado
+- Fecha

@@ -1,15 +1,11 @@
 <!--Conexion Base de datos-->
-<?php
-$serverName = "ANDROLAPTOP\SQLEXPRESS"; //Cambiar
-$connectionInfo = array( "Database"=>"Proyecto", "UID"=>"UsernameCon", "PWD"=>"Alejandro1298");
-$conn = sqlsrv_connect( $serverName, $connectionInfo);
-
-?>
+<?php require('./Codigos/conexion.php')?>
+<?php session_start(); ?>
 
 <html>
     <head>
+        <link rel="stylesheet" href="Css/indexcss.css" />
         <title>Menú Principal</title>
-        <link rel="stylesheet" href="./Css/indexcss.css">
     </head>
 
     <body class="grid-container">
@@ -19,64 +15,29 @@ $conn = sqlsrv_connect( $serverName, $connectionInfo);
         <?php require('layout/nav.php')?>
         <!--Cuerpo Pagina-->
         <article class="main">
-            
+            <?php 
+                $micarrito = $_SESSION['Carrito'];
+                $_SESSION['Carrito'] = $micarrito;
+                if(isset($_SESSION['Carrito'])){
+                    for($i=0;$i<=count($micarrito)-1;$i++){
+                        $total =$micarrito['cantidad'];
+                        $total ++;
+                        $total2 += $total; 
+                    }
+                }
+            ?>    
+
+            <form action="carrito.php">
             <!--Botones navegación Main-->
             <div class="Main_Menu">
                 <p>Clave del Producto:</p>
-                <input type="text" placeholder="Código de barras" class="txtSearch"></input>
-                <button class="Enter">Enter</button>
-                <button Class="Search">Buscar <img src="Icons/Search_White.png"></button>
+                <input type="text" placeholder="Código de barras" class="txtSearch" autofocus></input>
+                <button class="Enter" name="Enter" type="submit">Enter</button>
             </div>
-        
-            <table>
-                <!--Encabezado -->
-                <thead class="Encabezado">
-                    <tr>
-                        <th>Clave</th>
-                        <th>Descripción</th>
-                        <th>Cantidad</th>
-                        <th>Precio</th>
-                        <th>Importe</th>
-                        <th>Accion</th>
-                    </tr>
-                </thead>
-                
-                <!--Datos SQL Tabla-->
-                <?php
-                    $consulta = "SELECT * FROM Producto";
-                    $ejecutar = sqlsrv_query($conn,$consulta);
-
-                    //Generar lista de Productos
-                    $i = 0;
-                    while($fila = sqlsrv_fetch_array($ejecutar)){
-                        $Codigo = $fila['Codigo'];
-                        $Descripcion = $fila['Descripcion'];
-                        $Cantidad = $fila['Cantidad'];
-                        $Precio = $fila['Precio'];
-                        $i++;
-                    
-                    
-                    //Calcular Importe
-                    $Importe = $Cantidad * $Precio;
-                ?>
-                    <!--Cuerpo Tabla-->
-                    <tbody>
-                            <tr>
-                                <td><?php echo $Codigo; ?></td>
-                                <td><?php echo $Descripcion; ?></td>
-                                <td><?php echo $Cantidad; ?></td>
-                                <td><?php echo $Precio; ?></td>
-                                <td><?php echo $Importe?></td>
-                                <td><a href="index.php?editar=<?php echo $id; ?>">Eliminar</th>
-                            </tr>
-                    </tbody>
-                    
-                <?php } ?>
-
-
-
-
-            </table>
+            </form>
+            
+            <!--Mostrar tabla con todos los productos-->
+            <?php require('Codigos/showproductscode.php') ?>
 
         </article>
 

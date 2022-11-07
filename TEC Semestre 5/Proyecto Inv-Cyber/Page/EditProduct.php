@@ -1,10 +1,5 @@
 <!--Conexion Base de datos-->
-<?php
-$serverName = "ANDROLAPTOP\SQLEXPRESS"; //Cambiar
-$connectionInfo = array( "Database"=>"Proyecto", "UID"=>"UsernameCon", "PWD"=>"Alejandro1298");
-$conn = sqlsrv_connect( $serverName, $connectionInfo);
-
-?>
+<?php require('./Codigos/conexion.php')?>
 
 <html>
     <head>
@@ -19,37 +14,45 @@ $conn = sqlsrv_connect( $serverName, $connectionInfo);
         <?php require('layout/nav.php')?>
         <!--Cuerpo Pagina-->
         <article class="Main">
-            <form class="Formulario" action="">
+            <!--Código Search editar-->
+            <?php require('./Codigos/searchproductcode.php')?>
+
+            <h1>Editar Producto:</h1>
+
+            <form class="Formulario" action="" method="POST">
                 <div class="Search_Main">
                     <p>Código:</p>
                     <img src="./Icons/Search.png" width="30px" height="30px">
-                    <input type="text" name="" placeholder="Escribre aquí el código:" id="SearchBox" autofocus> </input>
-                    <input type="submit" name="SearchData" class="btnActu" value="Enter"></input>
+                    <input type="text" name="CodeS" placeholder="Escribre aquí el código:" id="SearchBox" autofocus> </input>
+                    <input type="submit" name="SearchData" class="btnEnter" value="Enter"></input>
                 </div>
 
                 <a id="Sep2"></a>
                 
                 <div class="Form">
+                    <input name="ID" id="IDTextBox" type="text"  value="<?php echo $ID?>"/>
                     <p>Código del producto:</p>
-                    <input name="Code" type="text" id="TextBox"></input>
-
+                    <input name="Code" id="TextBox" value="<?php echo $Codigo ?>"></input>
+                    
                     <p>Descripción del producto:</p>
-                    <input name="Desc" type="text" id="TextBox"></input>
-
+                    <input name="Desc" type="text" id="TextBox" value="<?php echo $Descripcion ?>"></input>
+                    
                     <p>Precio:</p>
-                    <input name="Price" type="text" id="TextBox"></input>
-
+                    <input name="Price" type="text" id="TextBox" value="<?php echo $Precio ?>"></input>
+                    
                     <p>Cantidad disponible:</p>
-                    <input name="Count" type="text" id="TextBox"></input>
-
-                    <input class="btnActu" type="submit" value="Actualizar Datos"></input>
+                    <input name="Count" type="text" id="TextBox" value="<?php echo $Cantidad ?>"></input>
                 </div>
-                
+
+                <a id="Sep2"></a>
+                <input name="Actu" class="btnActu" type="submit" value="Actualizar Datos"></input>
+                <!--Código Botón Actualizar-->
+                <?php require('./Codigos/editcode.php')?>
+
+
             </form>
 
         </article>
-        <!--Píe de Pagina-->
-        <footer class="footer"></footer>
 
 
     </body>

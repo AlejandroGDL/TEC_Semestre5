@@ -1,2 +1,2 @@
 
-<header class="Header"><img src="./Icons/Logo_CW.png" height="120px"></img></header>
+<header class="Header"><img src="./Icons/Logo_CW_White.png" height="120px"></img></header>

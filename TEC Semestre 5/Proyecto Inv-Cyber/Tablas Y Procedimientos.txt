@@ -7,22 +7,19 @@ Productos
 - Estado varchar(MAX)
 
 
-Carrito
+Venta
+- ID Venta
 - Código
 - Descripción
 - Cantidad
 - Precio
-- Estado
 - Fecha
 
 
-Historial_Ventas
-- ID_Venta
-
 Historial
+- ID Venta
 - Código
 - Descripción
 - Cantidad
 - Precio
-- Estado
 - Fecha

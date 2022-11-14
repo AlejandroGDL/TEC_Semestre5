@@ -1,0 +1,22 @@
+<?php 
+                include ('Codigos/Functions.php');
+                ReloadCarrito();
+            ?>
+            <!--Botones navegación Main-->
+            <div class="Main_Menu">
+                <p>Clave del Producto:</p>
+                <input name="CodeS" type="text" placeholder="Código de barras" class="txtSearch" autofocus></input>
+                <button class="Enter" name="SearchData" type="submit">Enter</button>
+            </div>
+
+            <!--Buscar OCULTO searchproductcode-->
+
+            <div>
+                <input name="IDVenta" type="text" value="<?php echo $ID ?>"></input>
+                <input name="CodeVenta" type="text" value="<?php echo $Codigo ?>"></input>
+                <input name="DescVenta" type="text" value="<?php echo $Descripcion ?>"></input>
+                <input name="PriceVenta" type="text" value="<?php echo $Precio ?>"></input>
+            </div>
+
+            <!-- Mostrar Carrito -->
+            <?php require('Codigos/carrito.php') ?> 

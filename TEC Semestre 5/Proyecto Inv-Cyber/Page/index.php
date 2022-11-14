@@ -6,6 +6,7 @@
     <head>
         <link rel="stylesheet" href="Css/indexcss.css" />
         <title>Menú Principal</title>
+        <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"> -->
     </head>
 
     <body class="grid-container">
@@ -13,40 +14,23 @@
         <?php require('layout/header.php')?>
         <!--Barra Navegación Pagina-->
         <?php require('layout/nav.php')?>
-        <!--Cuerpo Pagina-->
+        <!--Cuerpo Pagina y Píe de pagina-->
+        <form class="Formulario" action="./index.php" method="POST">
         <article class="main">
-            <?php 
-                $micarrito = $_SESSION['Carrito'];
-                $_SESSION['Carrito'] = $micarrito;
-                if(isset($_SESSION['Carrito'])){
-                    for($i=0;$i<=count($micarrito)-1;$i++){
-                        $total =$micarrito['cantidad'];
-                        $total ++;
-                        $total2 += $total; 
-                    }
-                }
-            ?>    
-
-            <form action="carrito.php">
-            <!--Botones navegación Main-->
-            <div class="Main_Menu">
-                <p>Clave del Producto:</p>
-                <input type="text" placeholder="Código de barras" class="txtSearch" autofocus></input>
-                <button class="Enter" name="Enter" type="submit">Enter</button>
-            </div>
-            </form>
-            
-            <!--Mostrar tabla con todos los productos-->
-            <?php require('Codigos/showproductscode.php') ?>
-
+            <?php include('Codigos/ventas.php'); ?>
         </article>
 
         <!--Píe de Pagina-->
         <footer class="footer">
-            <p>$999.99</p>
+            <p>Total: <?php echo $Subtotal?></p>
             <button class="btnCobrar">Cobrar</button>
         </footer>
-
+        </form>
     </body>
+
+    <!--Modal Buscar Produtos -->
+
+    <!--Mostrar tabla con todos los productos-->
+    
 
 </html>

@@ -18,22 +18,20 @@
 
         if(isset($_POST['SearchData'])){
             $CodeS = $_POST['CodeS'];
-            $editar = "SELECT * FROM Producto Where Codigo='$CodeS'";
-            $ejecutar = sqlsrv_query($conn,$editar);
+            $Buscar = "SELECT * FROM Producto Where Codigo='$CodeS'";
+            $EjecutarSearch = sqlsrv_query($conn,$Buscar);
   
-            while($fila = sqlsrv_fetch_array($ejecutar)){
-                $ID = $fila['ID_Producto'];
-                $Codigo = $fila['Codigo'];
-                $Descripcion = $fila['Descripcion'];
-                $Precio = $fila['Precio'];
-                $Cantidad = $fila['Cantidad'];
+            while($filaSearch = sqlsrv_fetch_array($EjecutarSearch)){
+                $ID = $filaSearch['ID_Producto'];
+                $Codigo = $filaSearch['Codigo'];
+                $Descripcion = $filaSearch['Descripcion'];
+                $Precio = $filaSearch['Precio'];
+                $Cantidad = $filaSearch['Cantidad'];
 
             /*//CAMPO VACIO
             if(empty($_POST['ID'])){
                 
             }*/   
-        
-
         
     ?>
 

@@ -21,7 +21,7 @@ body{
     display: grid;
     grid-template: 
     "header" 130px
-    "nav" 120px
+    "nav" 100px
     "main" auto
 }
 

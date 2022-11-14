@@ -7,5 +7,5 @@
         <a id="Sep"></a>
         <a href="DeleteProduct.php"><button>Eliminar <img src="icons/Delete_Dark.png" alt=""></button></a>
     </div>
-    <a class="Divisor"></a>
+    <!-- <a class="Divisor"></a> -->
 </nav>

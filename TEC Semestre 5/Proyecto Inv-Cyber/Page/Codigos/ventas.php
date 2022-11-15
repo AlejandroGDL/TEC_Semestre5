@@ -1,8 +1,8 @@
 <form action="" method="POST">
     <div class="Search-Menu">
         <p>Clave del producto:</p>
-        <input name="EnterVenta" type="text"></input>
-        <input name="EnterSearch" type="submit" value="Enter"></input>
+        <input name="EnterVenta" type="text" id="TextBoxSearch"></input>
+        <input name="EnterSearch" type="submit" value="Enter" id="BtnEnter"></input>
     </div>
 
     <table class="BUSQUEDA">
@@ -82,7 +82,7 @@
             <th><?php echo $CantidadV ?></th>
             <th><?php echo $PrecioV ?></th>
             <th><?php echo $ImporteV?></th>
-            <th name="BorrarBtn"><a href="index.php?Borrar=<?php echo $IDV; ?>">Eliminar</th>
+            <th><a href="index.php?Borrar=<?php echo $IDV; ?>">Eliminar</th>
         </tbody>
 
         <?php } ?>
@@ -94,7 +94,7 @@
 
 <?php
     
-    if(isset($_POST['Borrar'])){
+    if(isset($_GET['Borrar'])){
         $Borrar = "DELETE FROM Carrito WHERE ID_Producto='$IDV'";
         $EjecutarBorrar = sqlsrv_query($conn,$Borrar);
 

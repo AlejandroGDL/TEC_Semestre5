@@ -2,7 +2,7 @@
 <?php require('./Codigos/conexion.php')?>
 <?php session_start(); ?>
 
-<html>
+<html lang="es">
     <head>
         <link rel="stylesheet" href="Css/indexcss.css" />
         <title>Menú Principal</title>
@@ -23,14 +23,12 @@
         <!--Píe de Pagina-->
         <footer class="footer">
             <p>Total: <?php echo $Subtotal?></p>
-            <button class="btnCobrar">Cobrar</button>
+            <a class="btnCobrar" href="Modal_Cobrar.php">Cobrar</a>
         </footer>
         </form>
     </body>
 
     <!--Modal Buscar Produtos -->
-
-    <!--Mostrar tabla con todos los productos-->
-    
+    <?php include('Modal_Cobrar.php') ?>
 
 </html>

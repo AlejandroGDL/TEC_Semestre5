@@ -124,6 +124,8 @@ body{
     text-align: center;
 }
 
+/*Atributos UNICOS por pagina*/
+
 /*Formulario Completo*/
 .Formulario{
     display: flex;
@@ -167,6 +169,7 @@ body{
     border-radius: 0px;
 }
 
+/*Capos de texto Atributos:HOVER*/
 #TextBox:hover{
     border: 3px solid #000000;
 }
@@ -184,6 +187,7 @@ body{
     text-align: center;
 }
 
+/*Search Textbox:HOVER*/
 #SearchBox:hover{
     border: 3px solid #000000;
 }

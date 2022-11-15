@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Quicksand", sans-serif;
+    background-color: aqua;
+}
+
+/*Contenedor Modal*/
+.ModalContainer{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    width: 700px;
+    height: 600px;
+
+    background-color: rgba(236, 236, 236, 0.5);
+    border: 1px solid #000;
+    border-radius: 5px;
+
+    gap: 60px;
+}
+
+/*Contenedor DIVS INPUTS*/
+.Contenedor{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    gap: 10px;
+
+    width: 100%;
+}
+
+/*Parrafos Contendor*/
+.Contenedor p{
+    font-size: 30px;
+}
+
+/*Atributos Titulo*/
+.Titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 50px;
+    color: #FFF;
+    background-color: #000;
+    width: 100%;
+    height: 80px;
+}
+
+/*Atributos Divisor*/
+#DivisorModal{
+    width: 500px;
+    height: 1px;
+    background-color: #000;
+}
+
+/*Atributos INPUT*/
+#Descuento input{
+    font-size: 30px;
+    width: 15%;
+    text-align: end;
+}
+
+/*Botón Cobrar*/
+#BtnCheckIn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #000;
+    color: #FFF;
+    font-size: 30px;
+
+    width: 30%;
+    height: 10%;
+    border-radius: 50px;
+}

@@ -338,6 +338,35 @@ body{
 
 
 /*MODAL*/
+/*MODAL COMPLETO*/
+.Modal_Form{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #111111db;
+
+    opacity: 0;
+    pointer-events: none;
+
+    transition: opacity .6s;
+    --transform: translateY(-100vh);
+    --transition: transform .8s;
+}
+
+.Modal_Form--show{
+    opacity: 1;
+    pointer-events: unset;
+
+    transition: opacity .6s;
+    --transform: translateY(0);
+    --transition: transform .8s;
+}
+
 /*Contenedor Modal*/
 .ModalContainer{
     display: flex;
@@ -345,7 +374,7 @@ body{
 
     align-items: center;
 
-    width: 80%;
+    width: 50%;
     height: 80%;
 
     background-color: #ececec;
@@ -353,6 +382,9 @@ body{
     border-radius: 5px;
 
     gap: 85px;
+
+    transform: var(--transform);
+    transition: transform .8s;
 }
 
 /*Contenedor DIVS INPUTS*/
@@ -386,7 +418,7 @@ body{
 
 /*Atributos Divisor*/
 #DivisorModal{
-    width: 500px;
+    width: 70%;
     height: 1px;
     background-color: #000;
 }
@@ -401,8 +433,8 @@ body{
 .Buttons{
     display: flex;
     flex-direction: row;
-
-    justify-content: space-around;
+    width: 100%;
+    justify-content: space-around
 }
 
 /*Botón Cobrar*/
@@ -416,11 +448,18 @@ body{
     font-weight: 700;
     font-size: 30px;
 
-    width: 150%;
+    width: 30%;
     height: 100%;
     border-radius: 50px;
 }
 
+/*Botón Cobrar:HOVER*/
+#BtnCheckIn:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+/*Botón Cancelar*/
 #BtnCancel{
     display: flex;
     align-items: center;
@@ -430,21 +469,14 @@ body{
     color: #000000;
     font-size: 30px;
 
-    width: 150%;
+    width: 30%;
     height: 100%;
     border-radius: 50px;
     border: 1px solid #000;
 }
 
-
-.Modal_Form{
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #111111db;
+/*Botón Cancelar:HOVER*/
+#BtnCancel:Hover{
+    transform: scale(1.05);
+    cursor: pointer;
 }

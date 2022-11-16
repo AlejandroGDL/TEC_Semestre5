@@ -15,8 +15,8 @@
         <a id="DivisorModal"></a>
 
         <div class="Contenedor" id="Total">
-            <p>Total:</p>
-            <p><?php ?>999.99</p>
+            <b><p>Total:</p></b>
+            <b><p><?php ?>999.99</p></b>
         </div>
 
         <div class="Buttons">

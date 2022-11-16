@@ -31,4 +31,5 @@
     <!--Modal Buscar Produtos -->
     <?php include('Modal_Cobrar.php') ?>
 
+    <script src="JavaScript/modal.js"></script>
 </html>

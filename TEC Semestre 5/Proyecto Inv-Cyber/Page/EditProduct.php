@@ -38,10 +38,10 @@
                     <input name="Desc" type="text" id="TextBox" value="<?php echo $Descripcion ?>"></input>
                     
                     <p>Precio:</p>
-                    <input name="Price" type="text" id="TextBox" value="<?php echo $Precio ?>"></input>
+                    <input name="Price" type="number" id="TextBox" value="<?php echo $Precio ?>"></input>
                     
                     <p>Cantidad disponible:</p>
-                    <input name="Count" type="text" id="TextBox" value="<?php echo $Cantidad ?>"></input>
+                    <input name="Count" type="number" id="TextBox" value="<?php echo $Cantidad ?>"></input>
                 </div>
 
                 <a id="Sep2"></a>

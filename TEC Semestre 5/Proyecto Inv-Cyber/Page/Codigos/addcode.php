@@ -5,7 +5,7 @@
         $Precio = $_POST['Price'];
         $Cantidad = $_POST['Count'];
 
-        $insertar = "INSERT INTO Producto(Codigo,Descripcion,Cantidad,Precio,Estado) VALUES('$Codigo','$Descripcion','$Precio','$Cantidad','Activo')";
+        $insertar = "INSERT INTO Producto(Codigo,Descripcion,Cantidad,Precio,Estado) VALUES('$Codigo','$Descripcion','$Cantidad','$Precio','Activo')";
         $ejecutar = sqlsrv_query($conn,$insertar);
 
         if($ejecutar){

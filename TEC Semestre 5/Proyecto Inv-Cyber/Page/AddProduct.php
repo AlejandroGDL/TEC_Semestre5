@@ -27,10 +27,10 @@
                     <input name="Desc" type="text" id="TextBox"></input>
 
                     <p>Precio:</p>
-                    <input name="Price" type="text" id="TextBox"></input>
+                    <input name="Price" type="number" id="TextBox"></input>
 
                     <p>Cantidad del inventario:</p>
-                    <input name="Count" type="text" id="TextBox"></input>
+                    <input name="Count" type="number" id="TextBox"></input>
 
                 </div>
 

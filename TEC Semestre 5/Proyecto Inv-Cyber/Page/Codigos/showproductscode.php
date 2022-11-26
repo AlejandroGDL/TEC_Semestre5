@@ -1,4 +1,4 @@
-<table>
+<table class="TableProducts">
     <!--Encabezado -->
     <thead class="Encabezado">
         <tr>
@@ -6,8 +6,8 @@
             <th>Descripción</th>
             <th>Cantidad</th>
             <th>Precio</th>
-            <th>Importe</th>
-            <th>Accion</th>
+            <!-- <th>Importe</th> -->
+            <!-- <th>Accion</th> -->
         </tr>
     </thead>
                 
@@ -35,8 +35,8 @@
             <td><?php echo $Descripcion; ?></td>
             <td><?php echo $Cantidad; ?></td>
             <td>$ <?php echo $Precio; ?></td>
-            <td><?php echo $Importe?></td>
-            <td><a href="index.php?editar=<?php echo $id; ?>">Eliminar</th>
+            <!-- <td><?php // echo $Importe?></td> -->
+            <!-- <td><a href="index.php?editar= <?php // echo $id; ?>">Eliminar</th> -->
         </tr>
     </tbody>
                     

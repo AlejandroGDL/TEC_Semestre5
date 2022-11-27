@@ -1,0 +1,17 @@
+- Issabel 4
+	User Extensión = 101 - (Número de "Telefonico")
+	Display Name = Alfonso - (Nombre del número)
+	Secret = Contraseña123 (Contraseña para acceder al Usuario)
+
+- Issabel 5
+	Ring-Group Number = (Número identificador)
+	Group Description = (Descripcion del grupo)
+	Extension List = (Añadir número de los usuarios)
+
+	Choose one = Terminal Call (Acción para terminar llamada)
+
+- Issabel 6
+	Queue Number = (Identificador Cola)
+	Queue Name = (Nombre para identificar cola)
+	Extension Quick Pick = (Añadir números que se desean que tengan cola)
+	Choose one = Terminal Call (Acción para terminar llamada)

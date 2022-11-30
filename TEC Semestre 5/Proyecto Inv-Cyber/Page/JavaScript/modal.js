@@ -11,7 +11,7 @@ const CerrarModalPro = document.querySelector('#BtnCerrar_P');
 //Variables Modal Notificación
 const ModalNoti = document.querySelector('.Noti_Form');
 const CerrarNoti = document.querySelector('#N_Cerrar');
-const AbrirNoti = document.querySelector('#BTNNOTIFICACION');
+const AbrirNoti = document.querySelector('#BtnCheckIn');
 
 const Refresh = document.querySelector('#BtnCheckIn');
 
@@ -39,11 +39,14 @@ CerrarModalPro.addEventListener('click',(e)=>{
     ModalPro.classList.remove("ModalForm_P--show");
 });
 
+
 //Evento Abrir Notificación
 AbrirNoti.addEventListener('click',(e)=>{
     e.preventDefault();
     ModalNoti.classList.add("Noti_Form--show");
-});
+    
+    window.location.href = "progressbar.php";
+},2000);
 
 CerrarNoti.addEventListener('click',(e)=>{
     e.preventDefault();

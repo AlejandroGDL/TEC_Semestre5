@@ -11,7 +11,8 @@
             <p>Descuento %:</p>
             <input name="Descuento" placeholder="0%" type="number" value=""></input>
         </div>
-        <input name="Desc" id="BtnDesc" type="submit" value="Aplicar Descuento"></input>
+        <button name="Desc" id="BtnDesc" type="submit" value="Aplicar Descuento">Aplicar Descuento</button>
+        
         <?php 
  
             if(isset($_POST['Desc'])){
@@ -34,20 +35,19 @@
             <b><p>$<?php echo number_format($Total,2)  ?></p></b>
         </div>
 
+        <!-- Botones  -->
         <div class="Buttons">
-            <input name="Check" id="BtnCheckIn" type="submit" value="Cobrar" onclick="windows.location.reload();"></input>
+            <input name="Check" id="BtnCheckIn" type="submit" value="Cobrar"></input>
             <a id="BtnCancel">Cancelar</a>
         </div>
         
+        <!-- Realizar venta -->
         <?php
         if(isset($_POST['Check'])){
             $CobrarEjecutar = "DELETE FROM Carrito";
             $CobrarEjecutarSQL = sqlsrv_query($conn,$CobrarEjecutar);
-            sleep(1);
+        }
         ?>
-        <meta http-equiv="refresh" URL="<?php echo $page; ?>" >
-        <?php } ?>
 
-        ?>
     </section>
 </form>

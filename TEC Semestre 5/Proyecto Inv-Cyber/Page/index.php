@@ -15,7 +15,6 @@ $seg = "10";
 
 <html lang="es">
     <head>
-        
         <link rel="stylesheet" href="Css/indexcss.css" />
         <title>Menú Principal</title>
     </head>
